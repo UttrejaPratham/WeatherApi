@@ -16,7 +16,7 @@ public class WeatherApp {
         sc.close();
 
         try{
-            URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q="+ cityname +"&APPID=e1f9c2e9953101c8616a88d891ab8360");
+            URL url = new URL(""+ cityname +"");
 
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setRequestMethod("GET");
